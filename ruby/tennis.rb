@@ -1,4 +1,6 @@
 class Player
+  include Comparable
+
   attr_reader :name, :points
 
   def initialize(name)
@@ -8,6 +10,10 @@ class Player
 
   def give_point
      self.points += 1
+  end
+
+  def <=>(other_player)
+    self.points <=> other_player.points
   end
 
   private
@@ -51,8 +57,8 @@ class TennisGame1
     if @player1.points == @player2.points
       result = EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce')
     elsif (@player1.points >= 4) || (@player2.points >= 4)
-      players = [@player1, @player2].sort_by { |player| player.points }
-      result = compute_score(*players)
+      loserPlayer, winnerPlayer = [@player1, @player2].sort
+      result = compute_score(loserPlayer, winnerPlayer)
     else
       (1...3).each do |i|
         if i == 1
