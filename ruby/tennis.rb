@@ -1,5 +1,11 @@
 
 class TennisGame1
+  EQUAL_SCORES_NAMES = {
+    0 => 'Love-All',
+    1 => 'Fifteen-All',
+    2 => 'Thirty-All'
+  }
+
   def initialize(player1Name, player2Name)
     @player1Name = player1Name
     @player2Name = player2Name
@@ -19,11 +25,7 @@ class TennisGame1
     result = ''
     tempScore = 0
     if @p1points == @p2points
-      result = {
-        0 => 'Love-All',
-        1 => 'Fifteen-All',
-        2 => 'Thirty-All'
-      }.fetch(@p1points, 'Deuce')
+      result = EQUAL_SCORES_NAMES.fetch(@p1points, 'Deuce')
     elsif (@p1points >= 4) || (@p2points >= 4)
       minusResult = @p1points - @p2points
       result = if minusResult == 1

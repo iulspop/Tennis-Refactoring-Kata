@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-01-21T17:10:19-05:00">2021-01-21T17:10:19-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-03-04T17:51:04-05:00">2021-03-04T17:51:04-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.95%
+  96.33%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         28.58
+         33.86
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>131</b> relevant lines,
-    <span class="green"><b>127</b> lines covered</span> and
+    <b>109</b> relevant lines,
+    <span class="green"><b>105</b> lines covered</span> and
     <span class="red"><b>4</b> lines missed. </span>
     (<span class="green">
-  96.95%
+  96.33%
 </span>
 )
   </div>
@@ -71,13 +71,13 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#885b6d752d6d5bb8366ed756c73e3f0371ca0674" class="src_link" title="tennis.rb">tennis.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">96.95 %</td>
-            <td class="cell--number">219</td>
-            <td class="cell--number">131</td>
-            <td class="cell--number">127</td>
+            <td class="strong t-file__name"><a href="#80f1c31c18c483c51795c5f17ff26de67cad450d" class="src_link" title="tennis.rb">tennis.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">96.33 %</td>
+            <td class="cell--number">172</td>
+            <td class="cell--number">109</td>
+            <td class="cell--number">105</td>
             <td class="cell--number">4</td>
-            <td class="cell--number">28.58</td>
+            <td class="cell--number">33.86</td>
             
           </tr>
         
@@ -98,12 +98,12 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="885b6d752d6d5bb8366ed756c73e3f0371ca0674">
+        <div class="source_table" id="80f1c31c18c483c51795c5f17ff26de67cad450d">
   <div class="header">
     <h3>tennis.rb</h3>
     <h4>
       <span class="green">
-  96.95%
+  96.33%
 </span>
 
       lines covered
@@ -112,8 +112,8 @@
     
 
     <div class="t-line-summary">
-      <b>131</b> relevant lines.
-      <span class="green"><b>127</b> lines covered</span> and
+      <b>109</b> relevant lines.
+      <span class="green"><b>105</b> lines covered</span> and
       <span class="red"><b>4</b> lines missed.</span>
     </div>
 
@@ -147,24 +147,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="3">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">  def initialize(player1Name, player2Name)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="37" data-linenumber="4">
+            <span class="hits">37</span>
+            
+
+            
+
+            <code class="ruby">    @player1Name = player1Name</code>
           </li>
         </div>
       
@@ -175,7 +175,7 @@
 
             
 
-            <code class="ruby">    @player1Name = player1Name</code>
+            <code class="ruby">    @player2Name = player2Name</code>
           </li>
         </div>
       
@@ -186,7 +186,7 @@
 
             
 
-            <code class="ruby">    @player2Name = player2Name</code>
+            <code class="ruby">    @p1points = 0</code>
           </li>
         </div>
       
@@ -197,18 +197,18 @@
 
             
 
-            <code class="ruby">    @p1points = 0</code>
+            <code class="ruby">    @p2points = 0</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="8">
-            <span class="hits">37</span>
+          <li class="never" data-hits="" data-linenumber="8">
+            
             
 
             
 
-            <code class="ruby">    @p2points = 0</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -219,23 +219,12 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
-            <code class="ruby">        </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
+          <li class="covered" data-hits="1" data-linenumber="10">
             <span class="hits">1</span>
             
 
@@ -246,18 +235,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="298" data-linenumber="12">
+          <li class="covered" data-hits="298" data-linenumber="11">
             <span class="hits">298</span>
             
 
             
 
-            <code class="ruby">    if playerName == &quot;player1&quot;</code>
+            <code class="ruby">    if playerName == &#39;player1&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="149" data-linenumber="13">
+          <li class="covered" data-hits="149" data-linenumber="12">
             <span class="hits">149</span>
             
 
@@ -268,7 +257,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -279,7 +268,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="149" data-linenumber="15">
+          <li class="covered" data-hits="149" data-linenumber="14">
             <span class="hits">149</span>
             
 
@@ -290,13 +279,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
             
 
             <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -307,29 +307,29 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
+          <li class="covered" data-hits="1" data-linenumber="18">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">  def score</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="37" data-linenumber="19">
+            <span class="hits">37</span>
+            
+
+            
+
+            <code class="ruby">    result = &#39;&#39;</code>
           </li>
         </div>
       
@@ -340,7 +340,7 @@
 
             
 
-            <code class="ruby">    result = &quot;&quot;</code>
+            <code class="ruby">    tempScore = 0</code>
           </li>
         </div>
       
@@ -351,23 +351,12 @@
 
             
 
-            <code class="ruby">    tempScore=0</code>
+            <code class="ruby">    if @p1points == @p2points</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="22">
-            <span class="hits">37</span>
-            
-
-            
-
-            <code class="ruby">    if (@p1points==@p2points)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
@@ -378,13 +367,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="5" data-linenumber="24">
+          <li class="covered" data-hits="5" data-linenumber="23">
             <span class="hits">5</span>
             
 
             
 
-            <code class="ruby">          0 =&gt; &quot;Love-All&quot;,</code>
+            <code class="ruby">        0 =&gt; &#39;Love-All&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">        1 =&gt; &#39;Fifteen-All&#39;,</code>
           </li>
         </div>
       
@@ -395,7 +395,7 @@
 
             
 
-            <code class="ruby">          1 =&gt; &quot;Fifteen-All&quot;,</code>
+            <code class="ruby">        2 =&gt; &#39;Thirty-All&#39;</code>
           </li>
         </div>
       
@@ -406,29 +406,29 @@
 
             
 
-            <code class="ruby">          2 =&gt; &quot;Thirty-All&quot;,</code>
+            <code class="ruby">      }.fetch(@p1points, &#39;Deuce&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
-            
-            
-
-            
-
-            <code class="ruby">      }.fetch(@p1points, &quot;Deuce&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="32" data-linenumber="28">
+          <li class="covered" data-hits="32" data-linenumber="27">
             <span class="hits">32</span>
             
 
             
 
-            <code class="ruby">    elsif (@p1points&gt;=4 or @p2points&gt;=4)</code>
+            <code class="ruby">    elsif (@p1points &gt;= 4) || (@p2points &gt;= 4)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="20" data-linenumber="28">
+            <span class="hits">20</span>
+            
+
+            
+
+            <code class="ruby">      minusResult = @p1points - @p2points</code>
           </li>
         </div>
       
@@ -439,95 +439,95 @@
 
             
 
-            <code class="ruby">      minusResult = @p1points-@p2points</code>
+            <code class="ruby">      result = if minusResult == 1</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="30">
-            <span class="hits">20</span>
-            
-
-            
-
-            <code class="ruby">      if (minusResult==1)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="4" data-linenumber="31">
+          <li class="covered" data-hits="4" data-linenumber="30">
             <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">        result =&quot;Advantage player1&quot;</code>
+            <code class="ruby">                 &#39;Advantage player1&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="16" data-linenumber="32">
+          <li class="covered" data-hits="16" data-linenumber="31">
             <span class="hits">16</span>
             
 
             
 
-            <code class="ruby">      elsif (minusResult ==-1)</code>
+            <code class="ruby">               elsif minusResult == -1</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="33">
+          <li class="covered" data-hits="4" data-linenumber="32">
             <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">        result =&quot;Advantage player2&quot;</code>
+            <code class="ruby">                 &#39;Advantage player2&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="34">
+          <li class="covered" data-hits="12" data-linenumber="33">
             <span class="hits">12</span>
             
 
             
 
-            <code class="ruby">      elsif (minusResult&gt;=2)</code>
+            <code class="ruby">               elsif minusResult &gt;= 2</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="35">
+          <li class="covered" data-hits="6" data-linenumber="34">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">        result = &quot;Win for player1&quot;</code>
+            <code class="ruby">                 &#39;Win for player1&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="36">
+          <li class="never" data-hits="" data-linenumber="35">
             
             
 
             
 
-            <code class="ruby">      else</code>
+            <code class="ruby">               else</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="37">
+          <li class="covered" data-hits="6" data-linenumber="36">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">        result =&quot;Win for player2&quot;</code>
+            <code class="ruby">                 &#39;Win for player2&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">               end</code>
           </li>
         </div>
       
@@ -538,23 +538,12 @@
 
             
 
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
-            
-
             <code class="ruby">    else</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="40">
+          <li class="covered" data-hits="12" data-linenumber="39">
             <span class="hits">12</span>
             
 
@@ -565,18 +554,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="41">
+          <li class="covered" data-hits="24" data-linenumber="40">
             <span class="hits">24</span>
             
 
             
 
-            <code class="ruby">        if (i==1)</code>
+            <code class="ruby">        if i == 1</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="42">
+          <li class="covered" data-hits="12" data-linenumber="41">
             <span class="hits">12</span>
             
 
@@ -587,7 +576,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="43">
+          <li class="never" data-hits="" data-linenumber="42">
             
             
 
@@ -598,18 +587,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="44">
+          <li class="covered" data-hits="12" data-linenumber="43">
             <span class="hits">12</span>
             
 
             
 
-            <code class="ruby">          result+=&quot;-&quot;</code>
+            <code class="ruby">          result += &#39;-&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="12" data-linenumber="45">
+          <li class="covered" data-hits="12" data-linenumber="44">
             <span class="hits">12</span>
             
 
@@ -620,7 +609,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="46">
+          <li class="never" data-hits="" data-linenumber="45">
             
             
 
@@ -631,7 +620,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="24" data-linenumber="47">
+          <li class="covered" data-hits="24" data-linenumber="46">
             <span class="hits">24</span>
             
 
@@ -642,13 +631,24 @@
         </div>
       
         <div>
+          <li class="never" data-hits="" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby">          0 =&gt; &#39;Love&#39;,</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="never" data-hits="" data-linenumber="48">
             
             
 
             
 
-            <code class="ruby">            0 =&gt; &quot;Love&quot;,</code>
+            <code class="ruby">          1 =&gt; &#39;Fifteen&#39;,</code>
           </li>
         </div>
       
@@ -659,7 +659,7 @@
 
             
 
-            <code class="ruby">            1 =&gt; &quot;Fifteen&quot;,</code>
+            <code class="ruby">          2 =&gt; &#39;Thirty&#39;,</code>
           </li>
         </div>
       
@@ -670,7 +670,7 @@
 
             
 
-            <code class="ruby">            2 =&gt; &quot;Thirty&quot;,</code>
+            <code class="ruby">          3 =&gt; &#39;Forty&#39;</code>
           </li>
         </div>
       
@@ -681,7 +681,7 @@
 
             
 
-            <code class="ruby">            3 =&gt; &quot;Forty&quot;,</code>
+            <code class="ruby">        }[tempScore]</code>
           </li>
         </div>
       
@@ -692,7 +692,7 @@
 
             
 
-            <code class="ruby">        }[tempScore]</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -703,29 +703,29 @@
 
             
 
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="54">
-            
-            
-
-            
-
             <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="55">
+          <li class="covered" data-hits="37" data-linenumber="54">
             <span class="hits">37</span>
             
 
             
 
             <code class="ruby">    result</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -736,7 +736,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
@@ -747,23 +747,12 @@
 
             
 
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="58">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="59">
+          <li class="covered" data-hits="1" data-linenumber="58">
             <span class="hits">1</span>
             
 
@@ -774,7 +763,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="60">
+          <li class="covered" data-hits="1" data-linenumber="59">
             <span class="hits">1</span>
             
 
@@ -785,7 +774,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="61">
+          <li class="covered" data-hits="37" data-linenumber="60">
             <span class="hits">37</span>
             
 
@@ -796,7 +785,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="62">
+          <li class="covered" data-hits="37" data-linenumber="61">
             <span class="hits">37</span>
             
 
@@ -807,7 +796,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="63">
+          <li class="covered" data-hits="37" data-linenumber="62">
             <span class="hits">37</span>
             
 
@@ -818,7 +807,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="64">
+          <li class="covered" data-hits="37" data-linenumber="63">
             <span class="hits">37</span>
             
 
@@ -829,7 +818,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="65">
+          <li class="never" data-hits="" data-linenumber="64">
             
             
 
@@ -840,18 +829,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="66">
+          <li class="never" data-hits="" data-linenumber="65">
             
             
 
             
 
-            <code class="ruby">      </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="67">
+          <li class="covered" data-hits="1" data-linenumber="66">
             <span class="hits">1</span>
             
 
@@ -862,7 +851,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="298" data-linenumber="68">
+          <li class="covered" data-hits="298" data-linenumber="67">
             <span class="hits">298</span>
             
 
@@ -873,18 +862,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="149" data-linenumber="69">
+          <li class="covered" data-hits="149" data-linenumber="68">
             <span class="hits">149</span>
             
 
             
 
-            <code class="ruby">      p1Score()</code>
+            <code class="ruby">      p1Score</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
+          <li class="never" data-hits="" data-linenumber="69">
             
             
 
@@ -895,13 +884,24 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="149" data-linenumber="71">
+          <li class="covered" data-hits="149" data-linenumber="70">
             <span class="hits">149</span>
             
 
             
 
-            <code class="ruby">      p2Score()</code>
+            <code class="ruby">      p2Score</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -912,7 +912,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -923,29 +923,29 @@
 
             
 
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="74">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="75">
+          <li class="covered" data-hits="1" data-linenumber="74">
             <span class="hits">1</span>
             
 
             
 
             <code class="ruby">  def score</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="37" data-linenumber="75">
+            <span class="hits">37</span>
+            
+
+            
+
+            <code class="ruby">    result = &#39;&#39;</code>
           </li>
         </div>
       
@@ -956,18 +956,18 @@
 
             
 
-            <code class="ruby">    result = &quot;&quot;</code>
+            <code class="ruby">    if (@p1points == @p2points) &amp;&amp; (@p1points &lt; 3)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="77">
-            <span class="hits">37</span>
+          <li class="covered" data-hits="3" data-linenumber="77">
+            <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">    if (@p1points == @p2points and @p1points &lt; 3)</code>
+            <code class="ruby">      result = &#39;Love&#39; if @p1points.zero?</code>
           </li>
         </div>
       
@@ -978,51 +978,51 @@
 
             
 
-            <code class="ruby">      if (@p1points==0)</code>
+            <code class="ruby">      result = &#39;Fifteen&#39; if @p1points == 1</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="79">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        result = &quot;Love&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="80">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="81">
+          <li class="covered" data-hits="3" data-linenumber="79">
             <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">      if (@p1points==1)</code>
+            <code class="ruby">      result = &#39;Thirty&#39; if @p1points == 2</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="82">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="3" data-linenumber="80">
+            <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">        result = &quot;Fifteen&quot;</code>
+            <code class="ruby">      result += &#39;-All&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="37" data-linenumber="82">
+            <span class="hits">37</span>
+            
+
+            
+
+            <code class="ruby">    result = &#39;Deuce&#39; if (@p1points == @p2points) &amp;&amp; (@p1points &gt; 2)</code>
           </li>
         </div>
       
@@ -1033,95 +1033,95 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="84">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">      if (@p1points==2)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="85">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        result = &quot;Thirty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="86">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="87">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">      result += &quot;-All&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="88">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="37" data-linenumber="89">
+          <li class="covered" data-hits="37" data-linenumber="84">
             <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">    if (@p1points==@p2points and @p1points&gt;2)</code>
+            <code class="ruby">    p1res = &#39;&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="90">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="37" data-linenumber="85">
+            <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">        result = &quot;Deuce&quot;</code>
+            <code class="ruby">    p2res = &#39;&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="91">
+          <li class="covered" data-hits="37" data-linenumber="86">
+            <span class="hits">37</span>
             
+
+            
+
+            <code class="ruby">    if @p1points.positive? &amp;&amp; @p2points.zero?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="87">
+            <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">      p1res = &#39;Fifteen&#39; if @p1points == 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="88">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      p1res = &#39;Thirty&#39; if @p1points == 2</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="89">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      p1res = &#39;Forty&#39; if @p1points == 3</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="90">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      p2res = &#39;Love&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="91">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      result = &quot;#{p1res}-#{p2res}&quot;</code>
           </li>
         </div>
       
@@ -1132,7 +1132,7 @@
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1143,29 +1143,29 @@
 
             
 
-            <code class="ruby">    p1res = &quot;&quot;</code>
+            <code class="ruby">    if @p2points.positive? &amp;&amp; @p1points.zero?</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="94">
-            <span class="hits">37</span>
+          <li class="covered" data-hits="4" data-linenumber="94">
+            <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">    p2res = &quot;&quot;</code>
+            <code class="ruby">      p2res = &#39;Fifteen&#39; if @p2points == 1</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="95">
-            <span class="hits">37</span>
+          <li class="covered" data-hits="4" data-linenumber="95">
+            <span class="hits">4</span>
             
 
             
 
-            <code class="ruby">    if (@p1points &gt; 0 and @p2points==0)</code>
+            <code class="ruby">      p2res = &#39;Thirty&#39; if @p2points == 2</code>
           </li>
         </div>
       
@@ -1176,29 +1176,29 @@
 
             
 
-            <code class="ruby">      if (@p1points==1)</code>
+            <code class="ruby">      p2res = &#39;Forty&#39; if @p2points == 3</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="97">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="97">
+            
             
 
             
 
-            <code class="ruby">        p1res = &quot;Fifteen&quot;</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="98">
-            
-            
-
+          <li class="covered" data-hits="4" data-linenumber="98">
+            <span class="hits">4</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">      p1res = &#39;Love&#39;</code>
           </li>
         </div>
       
@@ -1209,18 +1209,18 @@
 
             
 
-            <code class="ruby">      if (@p1points==2)</code>
+            <code class="ruby">      result = &quot;#{p1res}-#{p2res}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="100">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="100">
+            
             
 
             
 
-            <code class="ruby">        p1res = &quot;Thirty&quot;</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -1231,221 +1231,78 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="102">
-            <span class="hits">4</span>
-            
-
-            
-
-            <code class="ruby">      if (@p1points==3)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="103">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        p1res = &quot;Forty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="104">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="4" data-linenumber="105">
-            <span class="hits">4</span>
-            
-
-            
-
-            <code class="ruby">      p2res = &quot;Love&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="4" data-linenumber="106">
-            <span class="hits">4</span>
-            
-
-            
-
-            <code class="ruby">      result = p1res + &quot;-&quot; + p2res</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="107">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="37" data-linenumber="108">
+          <li class="covered" data-hits="37" data-linenumber="102">
             <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">    if (@p2points &gt; 0 and @p1points==0)</code>
+            <code class="ruby">    if (@p1points &gt; @p2points) &amp;&amp; (@p1points &lt; 4)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="109">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="103">
+            <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      if (@p2points==1)</code>
+            <code class="ruby">      p1res = &#39;Thirty&#39; if @p1points == 2</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="110">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="6" data-linenumber="104">
+            <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">        p2res = &quot;Fifteen&quot;</code>
+            <code class="ruby">      p1res = &#39;Forty&#39; if @p1points == 3</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="111">
-            
-            
-
+          <li class="covered" data-hits="6" data-linenumber="105">
+            <span class="hits">6</span>
             
 
-            <code class="ruby">      end</code>
+            
+
+            <code class="ruby">      p2res = &#39;Fifteen&#39; if @p2points == 1</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="112">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="6" data-linenumber="106">
+            <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      if (@p2points==2)</code>
+            <code class="ruby">      p2res = &#39;Thirty&#39; if @p2points == 2</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="113">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="6" data-linenumber="107">
+            <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">        p2res = &quot;Thirty&quot;</code>
+            <code class="ruby">      result = &quot;#{p1res}-#{p2res}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="114">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="4" data-linenumber="115">
-            <span class="hits">4</span>
-            
-
-            
-
-            <code class="ruby">      if (@p2points==3)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="116">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        p2res = &quot;Forty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="117">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="118">
-            
-            
-
-            
-
-            <code class="ruby">      </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="4" data-linenumber="119">
-            <span class="hits">4</span>
-            
-
-            
-
-            <code class="ruby">      p1res = &quot;Love&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="4" data-linenumber="120">
-            <span class="hits">4</span>
-            
-
-            
-
-            <code class="ruby">      result = p1res + &quot;-&quot; + p2res</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="121">
+          <li class="never" data-hits="" data-linenumber="108">
             
             
 
@@ -1456,172 +1313,73 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="122">
-            
-            
-
-            
-
-            <code class="ruby">    </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="37" data-linenumber="123">
+          <li class="covered" data-hits="37" data-linenumber="109">
             <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">    if (@p1points&gt;@p2points and @p1points &lt; 4)</code>
+            <code class="ruby">    if (@p2points &gt; @p1points) &amp;&amp; (@p2points &lt; 4)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="124">
+          <li class="covered" data-hits="6" data-linenumber="110">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      if (@p1points==2)</code>
+            <code class="ruby">      p2res = &#39;Thirty&#39; if @p2points == 2</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="125">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">        p1res=&quot;Thirty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="126">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="127">
+          <li class="covered" data-hits="6" data-linenumber="111">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      if (@p1points==3)</code>
+            <code class="ruby">      p2res = &#39;Forty&#39; if @p2points == 3</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="128">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">        p1res=&quot;Forty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="129">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="130">
+          <li class="covered" data-hits="6" data-linenumber="112">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      if (@p2points==1)</code>
+            <code class="ruby">      p1res = &#39;Fifteen&#39; if @p1points == 1</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="131">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">        p2res=&quot;Fifteen&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="132">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="133">
+          <li class="covered" data-hits="6" data-linenumber="113">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      if (@p2points==2)</code>
+            <code class="ruby">      p1res = &#39;Thirty&#39; if @p1points == 2</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="134">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        p2res=&quot;Thirty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="135">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="136">
+          <li class="covered" data-hits="6" data-linenumber="114">
             <span class="hits">6</span>
             
 
             
 
-            <code class="ruby">      result = p1res + &quot;-&quot; + p2res</code>
+            <code class="ruby">      result = &quot;#{p1res}-#{p2res}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="137">
+          <li class="never" data-hits="" data-linenumber="115">
             
             
 
@@ -1632,304 +1390,51 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="138">
+          <li class="covered" data-hits="37" data-linenumber="116">
             <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">    if (@p2points&gt;@p1points and @p2points &lt; 4)</code>
+            <code class="ruby">    result = &quot;Advantage #{@player1Name}&quot; if (@p1points &gt; @p2points) &amp;&amp; (@p2points &gt;= 3)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="139">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      if (@p2points==2)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="140">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">        p2res=&quot;Thirty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="141">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="142">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      if (@p2points==3)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="143">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">        p2res=&quot;Forty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="144">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="145">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      if (@p1points==1)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="146">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">        p1res=&quot;Fifteen&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="147">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="148">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      if (@p1points==2)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="149">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        p1res=&quot;Thirty&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="150">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="151">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      result = p1res + &quot;-&quot; + p2res</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="152">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="37" data-linenumber="153">
+          <li class="covered" data-hits="37" data-linenumber="117">
             <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">    if (@p1points &gt; @p2points and @p2points &gt;= 3)</code>
+            <code class="ruby">    result = &quot;Advantage #{@player2Name}&quot; if (@p2points &gt; @p1points) &amp;&amp; (@p1points &gt;= 3)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="154">
-            <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">      result = &quot;Advantage &quot; + @player1Name</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="155">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="37" data-linenumber="156">
+          <li class="covered" data-hits="37" data-linenumber="118">
             <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">    if (@p2points &gt; @p1points and @p1points &gt;= 3)</code>
+            <code class="ruby">    result = &quot;Win for #{@player1Name}&quot; if (@p1points &gt;= 4) &amp;&amp; (@p2points &gt;= 0) &amp;&amp; ((@p1points - @p2points) &gt;= 2)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="157">
-            <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">      result = &quot;Advantage &quot; + @player2Name</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="158">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="37" data-linenumber="159">
+          <li class="covered" data-hits="37" data-linenumber="119">
             <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">    if (@p1points&gt;=4 and @p2points&gt;=0 and (@p1points-@p2points)&gt;=2)</code>
+            <code class="ruby">    result = &quot;Win for #{@player2Name}&quot; if (@p2points &gt;= 4) &amp;&amp; (@p1points &gt;= 0) &amp;&amp; ((@p2points - @p1points) &gt;= 2)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="6" data-linenumber="160">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      result = &quot;Win for &quot; + @player1Name</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="161">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="37" data-linenumber="162">
-            <span class="hits">37</span>
-            
-
-            
-
-            <code class="ruby">    if (@p2points&gt;=4 and @p1points&gt;=0 and (@p2points-@p1points)&gt;=2)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="6" data-linenumber="163">
-            <span class="hits">6</span>
-            
-
-            
-
-            <code class="ruby">      result = &quot;Win for &quot; + @player2Name</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="164">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="37" data-linenumber="165">
+          <li class="covered" data-hits="37" data-linenumber="120">
             <span class="hits">37</span>
             
 
@@ -1940,7 +1445,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="166">
+          <li class="never" data-hits="" data-linenumber="121">
             
             
 
@@ -1951,7 +1456,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="167">
+          <li class="never" data-hits="" data-linenumber="122">
             
             
 
@@ -1962,7 +1467,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="168">
+          <li class="covered" data-hits="1" data-linenumber="123">
             <span class="hits">1</span>
             
 
@@ -1973,29 +1478,29 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="169">
+          <li class="missed" data-hits="0" data-linenumber="124">
             
             
 
             
 
-            <code class="ruby">    (0..number).each do |i|</code>
+            <code class="ruby">    (0..number).each do |_i|</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="170">
+          <li class="missed" data-hits="0" data-linenumber="125">
             
             
 
             
 
-            <code class="ruby">        p1Score()</code>
+            <code class="ruby">      p1Score</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="171">
+          <li class="never" data-hits="" data-linenumber="126">
             
             
 
@@ -2006,7 +1511,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="172">
+          <li class="never" data-hits="" data-linenumber="127">
             
             
 
@@ -2017,7 +1522,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="173">
+          <li class="never" data-hits="" data-linenumber="128">
             
             
 
@@ -2028,7 +1533,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="174">
+          <li class="covered" data-hits="1" data-linenumber="129">
             <span class="hits">1</span>
             
 
@@ -2039,29 +1544,29 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="175">
+          <li class="missed" data-hits="0" data-linenumber="130">
             
             
 
             
 
-            <code class="ruby">    (0..number).each do |i|</code>
+            <code class="ruby">    (0..number).each do |_i|</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="176">
+          <li class="missed" data-hits="0" data-linenumber="131">
             
             
 
             
 
-            <code class="ruby">      p2Score()</code>
+            <code class="ruby">      p2Score</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="177">
+          <li class="never" data-hits="" data-linenumber="132">
             
             
 
@@ -2072,7 +1577,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="178">
+          <li class="never" data-hits="" data-linenumber="133">
             
             
 
@@ -2083,7 +1588,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="179">
+          <li class="never" data-hits="" data-linenumber="134">
             
             
 
@@ -2094,7 +1599,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="180">
+          <li class="covered" data-hits="1" data-linenumber="135">
             <span class="hits">1</span>
             
 
@@ -2105,18 +1610,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="149" data-linenumber="181">
+          <li class="covered" data-hits="149" data-linenumber="136">
             <span class="hits">149</span>
             
 
             
 
-            <code class="ruby">    @p1points +=1</code>
+            <code class="ruby">    @p1points += 1</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="182">
+          <li class="never" data-hits="" data-linenumber="137">
             
             
 
@@ -2127,62 +1632,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="183">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="184">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def p2Score</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="149" data-linenumber="185">
-            <span class="hits">149</span>
-            
-
-            
-
-            <code class="ruby">    @p2points +=1</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="186">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="187">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="188">
+          <li class="never" data-hits="" data-linenumber="138">
             
             
 
@@ -2193,7 +1643,62 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="189">
+          <li class="covered" data-hits="1" data-linenumber="139">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def p2Score</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="149" data-linenumber="140">
+            <span class="hits">149</span>
+            
+
+            
+
+            <code class="ruby">    @p2points += 1</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="141">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="142">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="143">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="144">
             <span class="hits">1</span>
             
 
@@ -2204,7 +1709,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="190">
+          <li class="covered" data-hits="1" data-linenumber="145">
             <span class="hits">1</span>
             
 
@@ -2215,7 +1720,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="191">
+          <li class="covered" data-hits="37" data-linenumber="146">
             <span class="hits">37</span>
             
 
@@ -2226,7 +1731,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="192">
+          <li class="covered" data-hits="37" data-linenumber="147">
             <span class="hits">37</span>
             
 
@@ -2237,7 +1742,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="193">
+          <li class="covered" data-hits="37" data-linenumber="148">
             <span class="hits">37</span>
             
 
@@ -2248,7 +1753,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="194">
+          <li class="covered" data-hits="37" data-linenumber="149">
             <span class="hits">37</span>
             
 
@@ -2259,7 +1764,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="195">
+          <li class="never" data-hits="" data-linenumber="150">
             
             
 
@@ -2270,18 +1775,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="196">
+          <li class="never" data-hits="" data-linenumber="151">
             
             
 
             
 
-            <code class="ruby">      </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="197">
+          <li class="covered" data-hits="1" data-linenumber="152">
             <span class="hits">1</span>
             
 
@@ -2292,7 +1797,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="298" data-linenumber="198">
+          <li class="covered" data-hits="298" data-linenumber="153">
             <span class="hits">298</span>
             
 
@@ -2303,18 +1808,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="149" data-linenumber="199">
+          <li class="covered" data-hits="149" data-linenumber="154">
             <span class="hits">149</span>
             
 
             
 
-            <code class="ruby">        @p1 += 1</code>
+            <code class="ruby">      @p1 += 1</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="200">
+          <li class="never" data-hits="" data-linenumber="155">
             
             
 
@@ -2325,18 +1830,18 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="149" data-linenumber="201">
+          <li class="covered" data-hits="149" data-linenumber="156">
             <span class="hits">149</span>
             
 
             
 
-            <code class="ruby">        @p2 += 1</code>
+            <code class="ruby">      @p2 += 1</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="202">
+          <li class="never" data-hits="" data-linenumber="157">
             
             
 
@@ -2347,7 +1852,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="203">
+          <li class="never" data-hits="" data-linenumber="158">
             
             
 
@@ -2358,18 +1863,18 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="204">
+          <li class="never" data-hits="" data-linenumber="159">
             
             
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="205">
+          <li class="covered" data-hits="1" data-linenumber="160">
             <span class="hits">1</span>
             
 
@@ -2380,29 +1885,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="37" data-linenumber="206">
+          <li class="covered" data-hits="37" data-linenumber="161">
             <span class="hits">37</span>
             
 
             
 
-            <code class="ruby">    if (@p1 &lt; 4 and @p2 &lt; 4) and (@p1 + @p2 &lt; 6)</code>
+            <code class="ruby">    if ((@p1 &lt; 4) &amp;&amp; (@p2 &lt; 4)) &amp;&amp; (@p1 + @p2 &lt; 6)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="207">
+          <li class="covered" data-hits="15" data-linenumber="162">
             <span class="hits">15</span>
             
 
             
 
-            <code class="ruby">      p = [&quot;Love&quot;, &quot;Fifteen&quot;, &quot;Thirty&quot;, &quot;Forty&quot;]</code>
+            <code class="ruby">      p = %w[Love Fifteen Thirty Forty]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="208">
+          <li class="covered" data-hits="15" data-linenumber="163">
             <span class="hits">15</span>
             
 
@@ -2413,18 +1918,40 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="209">
+          <li class="covered" data-hits="15" data-linenumber="164">
             <span class="hits">15</span>
             
 
             
 
-            <code class="ruby">      @p1 == @p2 ? s + &quot;-All&quot; : s + &quot;-&quot; + p[@p2]</code>
+            <code class="ruby">      @p1 == @p2 ? &quot;#{s}-All&quot; : &quot;#{s}-#{p[@p2]}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="210">
+          <li class="covered" data-hits="22" data-linenumber="165">
+            <span class="hits">22</span>
+            
+
+            
+
+            <code class="ruby">    elsif @p1 == @p2</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="166">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      &#39;Deuce&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="167">
             
             
 
@@ -2435,73 +1962,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="22" data-linenumber="211">
-            <span class="hits">22</span>
-            
-
-            
-
-            <code class="ruby">      if (@p1 == @p2)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="212">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">        &quot;Deuce&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="213">
-            
-            
-
-            
-
-            <code class="ruby">      else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="20" data-linenumber="214">
+          <li class="covered" data-hits="20" data-linenumber="168">
             <span class="hits">20</span>
             
 
             
 
-            <code class="ruby">        s = @p1 &gt; @p2 ? @p1N : @p2N</code>
+            <code class="ruby">      s = @p1 &gt; @p2 ? @p1N : @p2N</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="20" data-linenumber="215">
+          <li class="covered" data-hits="20" data-linenumber="169">
             <span class="hits">20</span>
             
 
             
 
-            <code class="ruby">        (@p1-@p2)*(@p1-@p2) == 1 ? &quot;Advantage &quot; + s : &quot;Win for &quot; + s</code>
+            <code class="ruby">      (@p1 - @p2) * (@p1 - @p2) == 1 ? &quot;Advantage #{s}&quot; : &quot;Win for #{s}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="216">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="217">
+          <li class="never" data-hits="" data-linenumber="170">
             
             
 
@@ -2512,7 +1995,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="218">
+          <li class="never" data-hits="" data-linenumber="171">
             
             
 
@@ -2523,7 +2006,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="219">
+          <li class="never" data-hits="" data-linenumber="172">
             
             
 
