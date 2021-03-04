@@ -58,10 +58,6 @@ class TennisGame1
     end
   end
 
-  def get_score(player)
-    SCORE_NAMES[player.points]
-  end
-
   def score
     result = ''
     tempScore = 0
@@ -71,9 +67,9 @@ class TennisGame1
       loserPlayer, winnerPlayer = [@player1, @player2].sort
       result = compute_score(loserPlayer, winnerPlayer)
     else
-      result = get_score(@player1)
+      result = SCORE_NAMES[@player1.points]
       result += '-'
-      result += get_score(@player2)
+      result += SCORE_NAMES[@player2.points]
     end
     result
   end
