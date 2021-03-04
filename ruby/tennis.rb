@@ -21,6 +21,16 @@ class TennisGame1
     end
   end
 
+  def compute_score(winnerPlayer, loserPlayer)
+    if (winnerPlayer.points >= 4)
+      if winnerPlayer.points - loserPlayer.points > 1
+        return "Win for #{winnerPlayer.name}"
+      else
+        return "Advantage #{winnerPlayer.name}"
+      end
+    end
+  end
+
   def score
     result = ''
     tempScore = 0
