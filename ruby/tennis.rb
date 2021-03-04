@@ -59,8 +59,6 @@ class TennisGame1
   end
 
   def score
-    result = ''
-    tempScore = 0
     if @player1.points == @player2.points
       result = EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce')
     elsif (@player1.points >= 4) || (@player2.points >= 4)
