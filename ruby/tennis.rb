@@ -59,7 +59,7 @@ class TennisGame1
   end
 
   def score
-    if @player1.points == @player2.points
+    if @player1 == @player2
       result = EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce')
     elsif (@player1.points >= 4) || (@player2.points >= 4)
       loserPlayer, winnerPlayer = [@player1, @player2].sort
