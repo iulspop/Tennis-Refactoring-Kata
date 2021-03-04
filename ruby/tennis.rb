@@ -35,7 +35,7 @@ class TennisGame1
     end
   end
 
-  def compute_score(winnerPlayer, loserPlayer)
+  def compute_score(loserPlayer, winnerPlayer)
     if (winnerPlayer.points >= 4)
       if winnerPlayer.points - loserPlayer.points > 1
         return "Win for #{winnerPlayer.name}"
@@ -51,16 +51,8 @@ class TennisGame1
     if @player1.points == @player2.points
       result = EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce')
     elsif (@player1.points >= 4) || (@player2.points >= 4)
-      minusResult = @player1.points - @player2.points
-      result = if minusResult == 1
-                 'Advantage player1'
-               elsif minusResult == -1
-                 'Advantage player2'
-               elsif minusResult >= 2
-                 'Win for player1'
-               else
-                 'Win for player2'
-               end
+      players = [@player1, @player2].sort_by { |player| player.points }
+      result = compute_score(*players)
     else
       (1...3).each do |i|
         if i == 1
