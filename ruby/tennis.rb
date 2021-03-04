@@ -28,6 +28,13 @@ class TennisGame1
     2 => 'Thirty-All'
   }
 
+  SCORE_NAMES = {
+    0 => 'Love',
+    1 => 'Fifteen',
+    2 => 'Thirty',
+    3 => 'Forty'
+  }
+
   def initialize(player1Name, player2Name)
     @player1 = Player.new(player1Name)
     @player2 = Player.new(player2Name)
@@ -52,12 +59,7 @@ class TennisGame1
   end
 
   def get_score(player)
-    {
-      0 => 'Love',
-      1 => 'Fifteen',
-      2 => 'Thirty',
-      3 => 'Forty'
-    }[player.points]
+    SCORE_NAMES[player.points]
   end
 
   def score
