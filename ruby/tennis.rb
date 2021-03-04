@@ -49,27 +49,22 @@ class TennisGame1
   end
 
   def compute_score(loserPlayer, winnerPlayer)
-    if (winnerPlayer.points >= 4)
-      if winnerPlayer.points - loserPlayer.points > 1
-        return "Win for #{winnerPlayer.name}"
-      else
-        return "Advantage #{winnerPlayer.name}"
-      end
+    if winnerPlayer.points - loserPlayer.points > 1
+      return "Win for #{winnerPlayer.name}"
+    else
+      return "Advantage #{winnerPlayer.name}"
     end
   end
 
   def score
-    if @player1 == @player2
-      result = EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce')
-    elsif (@player1.points >= 4) || (@player2.points >= 4)
-      loserPlayer, winnerPlayer = [@player1, @player2].sort
-      result = compute_score(loserPlayer, winnerPlayer)
-    else
-      result = SCORE_NAMES[@player1.points]
-      result += '-'
-      result += SCORE_NAMES[@player2.points]
-    end
-    result
+    return EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce') if @player1 == @player2
+
+    loserPlayer, winnerPlayer = [@player1, @player2].sort
+    return result = compute_score(loserPlayer, winnerPlayer) if winnerPlayer.points >= 4
+
+    result = SCORE_NAMES[@player1.points]
+    result += '-'
+    result += SCORE_NAMES[@player2.points]
   end
 end
 
