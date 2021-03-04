@@ -51,6 +51,15 @@ class TennisGame1
     end
   end
 
+  def get_score(player)
+    {
+      0 => 'Love',
+      1 => 'Fifteen',
+      2 => 'Thirty',
+      3 => 'Forty'
+    }[player.points]
+  end
+
   def score
     result = ''
     tempScore = 0
@@ -60,20 +69,9 @@ class TennisGame1
       loserPlayer, winnerPlayer = [@player1, @player2].sort
       result = compute_score(loserPlayer, winnerPlayer)
     else
-      (1..2).each do |i|
-        if i == 1
-          tempScore = @player1.points
-        else
-          result += '-'
-          tempScore = @player2.points
-        end
-        result += {
-          0 => 'Love',
-          1 => 'Fifteen',
-          2 => 'Thirty',
-          3 => 'Forty'
-        }[tempScore]
-      end
+      result = get_score(@player1)
+      result += '-'
+      result += get_score(@player2)
     end
     result
   end
