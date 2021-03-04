@@ -1,3 +1,19 @@
+class Player
+  attr_reader :name, :points
+
+  def initialize(name)
+    @name = name
+    @points = 0
+  end
+
+  def give_point
+     self.points += 1
+  end
+
+  private
+
+  attr_writer :points
+end
 
 class TennisGame1
   EQUAL_SCORES_NAMES = {
@@ -7,17 +23,15 @@ class TennisGame1
   }
 
   def initialize(player1Name, player2Name)
-    @player1Name = player1Name
-    @player2Name = player2Name
-    @p1points = 0
-    @p2points = 0
+    @player1 = Player.new(player1Name)
+    @player2 = Player.new(player2Name)
   end
 
   def won_point(playerName)
     if playerName == 'player1'
-      @p1points += 1
+      @player1.give_point
     else
-      @p2points += 1
+      @player2.give_point
     end
   end
 
@@ -34,10 +48,10 @@ class TennisGame1
   def score
     result = ''
     tempScore = 0
-    if @p1points == @p2points
-      result = EQUAL_SCORES_NAMES.fetch(@p1points, 'Deuce')
-    elsif (@p1points >= 4) || (@p2points >= 4)
-      minusResult = @p1points - @p2points
+    if @player1.points == @player2.points
+      result = EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce')
+    elsif (@player1.points >= 4) || (@player2.points >= 4)
+      minusResult = @player1.points - @player2.points
       result = if minusResult == 1
                  'Advantage player1'
                elsif minusResult == -1
@@ -50,10 +64,10 @@ class TennisGame1
     else
       (1...3).each do |i|
         if i == 1
-          tempScore = @p1points
+          tempScore = @player1.points
         else
           result += '-'
-          tempScore = @p2points
+          tempScore = @player2.points
         end
         result += {
           0 => 'Love',
