@@ -60,7 +60,7 @@ class TennisGame1
       loserPlayer, winnerPlayer = [@player1, @player2].sort
       result = compute_score(loserPlayer, winnerPlayer)
     else
-      (1...3).each do |i|
+      (1..2).each do |i|
         if i == 1
           tempScore = @player1.points
         else
