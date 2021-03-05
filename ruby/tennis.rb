@@ -48,7 +48,7 @@ class TennisGame1
     end
   end
 
-  def compute_score(loserPlayer, winnerPlayer)
+  def winner_score_lingo(loserPlayer, winnerPlayer)
     if winnerPlayer.points - loserPlayer.points > 1
       return "Win for #{winnerPlayer.name}"
     else
@@ -68,7 +68,7 @@ class TennisGame1
     return get_equal_score_lingo if @player1 == @player2
 
     loserPlayer, winnerPlayer = [@player1, @player2].sort
-    return result = compute_score(loserPlayer, winnerPlayer) if winnerPlayer.points >= 4
+    return winner_score_lingo(loserPlayer, winnerPlayer) if winnerPlayer.points >= 4
 
     regular_score_lingo
   end
