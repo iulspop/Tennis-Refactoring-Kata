@@ -56,8 +56,12 @@ class TennisGame1
     end
   end
 
+  def get_equal_score_lingo
+    EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce')
+  end
+
   def score
-    return EQUAL_SCORES_NAMES.fetch(@player1.points, 'Deuce') if @player1 == @player2
+    return get_equal_score_lingo if @player1 == @player2
 
     loserPlayer, winnerPlayer = [@player1, @player2].sort
     return result = compute_score(loserPlayer, winnerPlayer) if winnerPlayer.points >= 4
